@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- les typos google font anton oswald lemonada -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
+    <!-- font awesome en cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- la description qui s'affiche sur un résultat de recherche google -->
+    <meta name="descrption" content="Site de la phase 2 Setti BELKACEM pantin 2018/2019 LePoleS">
+    <!-- les mots clefs utiles pour les moteurs de recherche -->
+    <meta name="keywords" content="HTML, CSS, Setti BELKACEM, LePoleS, pantin">
+    <!-- l'auteur de la page -->
+    <meta name="autor" content="Setti BELKACEM"> 
+    <title>Site PHASE 2 - acceuil</title>
+    <!-- ma feuille de style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <header>
+            <div id="logo"> 
+                <a href="#logo">
+                    <button type="button"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+            </div><!-- fin logo -->
+
+            <a href="index.html" title="Mon premier site en HTML acceuil">
+                <div id="slogan">
+                    <h1>Mon premier site en HTML et CSS</h1>
+                </div>
+            </a>
+        
+        <div id="social">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div><!-- fin id social -->
+
+        <div class="clear"></div>
+        
+    </header>
+    <nav>
+        <!-- zone de menu des liens por passer de page en page -->
+        <div class="ancreNav">
+            <a href="index.html" title="Acceuil">Acceuil</a>
+            <a href="texte.html" title="texte">Texte</a>
+            <a href="selecteur.html" title="selecteur">Selecteur</a>
+            <a href="image.html" title="image">Image</a>
+            <a href="position.html" title="position" class="active">Position</a>
+            <a href="zoning.html" title="zoning">Zoning</a>
+            <a href="tableau.html" title="tableau">Tableau</a>
+            <a href="liste.html" title="liste">Liste</a>
+            <a href="lien_menu.html" title="lien_menu">Lien_menu</a>
+            <a href="formulaire.html" title="formulaire">Formulaire</a>
+            <a href="multimedia.html" title="multimédia">Multimédia</a>
+            <a href="animation.html" title="animation">Animation</a>
+        </div>
+
+    </nav>
+
+    <!-- contenu principale -->
+    <main>
+        <section>
+            <h3>Centrer un élément de type bloc</h3>
+            <div class="centre">n°1</div>
+        </section>
+        <hr width=50%>
+
+        <section>
+            <h3>Position Absolute</h3>
+            <p>n°2 : un carré jaune ; regardez en haut ! </p>
+            <div class="absolute">n° 2</div>
+        </section>
+
+        <section>
+            <h3>Position Relative</h3>
+            <div class="relative"><div>n° 3</div></div>
+        </section>
+
+        <section>
+            <h3>Position Fixed</h3>
+            <p>cf.le button vers le haut (en bas à droite)</p>
+        </section>
+
+        <section>
+            <h3>Le pourcentage</h3>
+            <div class="trente">30%</div>
+            <div class="cinquante">50%</div>
+            <div class="cent">80%</div>
+        </section>
+
+        <section>
+            <h3>Lattribut float</h3>
+            <div class="float">1</div>
+            <div class="float">2</div>
+            <div class="float">3</div>
+            <div class="float">4</div>
+            <div class="float clear">5</div>
+            <div class="float">6</div>
+            <div class="float">7</div>
+            <div class="float clear">8</div>
+            <div class="float">9</div>
+            <div class="clear dernier">10</div>
+        </section>
+
+        <section>
+            <h3>Exercise sur le float</h3>
+            <div class="zone"></div>
+                <div class="zone1"></div>
+                <div class="zone2"></div>
+                <div class="zone3"></div>
+                <div class="zone4"></div>
+            <div class="zone clear"></div>
+        </section>
+
+        <section>
+            <h3> Flexbox</h3>
+            <article class="flex"><!--  se place en fonction de l'élement parent -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </article>
+        </section>
+
+    </main>
+    <!-- fin main -->
+
+    <footer>
+            <div class="nav1">
+                <ul>
+                    <li><a href="index.html" title="Acceuil">Acceuil</a></li>
+                    <li><a href="texte.html" title="texte">Texte</a></li>
+                    <li><a href="selecteur.html" title="selecteur">Selecteur</a></li>
+                    <li><a href="image.html" title="image">Image</a></li>
+                </ul>
+            </div>
+            <div class="nav1">
+                <ul>
+                    <li><a href="position.html" title="position">Position</a></li>
+                    <li><a href="zoning.html" title="zoning">Zoning</a></li>
+                    <li><a href="tableau.html" title="tableau">Tableau</a></li>
+                    <li><a href="liste.html" title="liste">Liste</a></li>
+                </ul>
+            </div>
+            <div class="nav1">
+                <ul>
+                    <li><a href="lien_menu.html" title="lien_menu">Lien_menu</a></li>
+                    <li><a href="formulaire.html" title="formulaire">Formulaire</a></li>
+                    <li><a href="multimedia.html" title="multimédia">Multimédia</a></li>
+                    <li><a href="animation.html" title="animation">Animation</a></li>
+                </ul>
+            </div>
+            <div class="fin"><iframe src="" frameborder="0"></iframe></div>
+        </footer>
+
+</body>
+</html>

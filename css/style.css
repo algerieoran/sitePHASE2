@@ -1,0 +1,789 @@
+@charset "UTF-8";
+/* reset simple */
+
+*{ /* *l'etoile signifie tout all */
+    box-sizing: border-box;
+ }
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    font-size: 100%;
+                    font: inherit;
+                    vertical-align: baseline;
+ }
+
+/* les typos google */
+/* font-family: 'Lemonada', cursive; */
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Anton', sans-serif; */
+
+/* mes styles Setti BELKACEM site de html css phase 2 */
+body {
+    background: plum;
+    font-family: 'oswald' , sans-serif;
+    background-image: url('../img/concrete-texture.png');
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    color: #2980b9;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 45px;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    padding: 15px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+blockquote {
+    font-size: 120%;
+    font-family: 'lemonada', serif;
+   
+}
+blockquote i {
+    font-size: 350%;
+    vertical-align: middle;
+    /* color: #a6d6c3; */
+
+}
+
+.position1 {
+    margin: 20px;
+    position: relative;
+    top: 15px;
+}
+.position2 {
+    margin: 20px;
+    position: relative;
+    top: 15px;
+}
+strong {
+    font-weight: bold;
+}
+
+/* header index */
+
+header {
+    background: #2c3e50;
+    height: 175px;
+}
+
+#logo {
+    float: left;
+    width: 25%;
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+
+#slogan {
+    float: left;
+    width: 50%;
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+
+}
+
+#social {
+    float: left;
+    width: 25%;
+}
+
+#social i {
+    background: #2c3e50;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0;
+    display: block;
+}
+header a {
+    text-decoration: none;
+    color: #10828c;
+}
+
+/* fin header */
+
+/* nav //navigation */
+nav {
+    background: #2980b9;
+    height: 70px;
+    border-bottom: 8px solid#6acafc;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    background: #6acafc;
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0;
+    border: 2px solid #fff;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oswald' sans-serif;
+    transition: 0.5s; /* transition sur le a marche avec le :hover */
+}
+
+nav a :hover {
+    color: #fff;
+    background: #a6d6c3;
+}
+
+.active {
+    color: #fff;
+    background: #a6d6c3;
+}
+/* fin nav */
+
+/* les zones principales */
+main {
+    background: rgba(178, 178, 0, 0.30);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+aside {
+    height: 250px;
+    background: #a6d6c3;
+}
+
+section {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+footer {
+    height: 30px;
+    background: #2980b9;
+}
+/* fin des zones principales */
+
+/* le retour en haut de page */
+
+button {
+    font-size: 350%;
+    background: transparent; /* l'icone transparente */
+    border: none;
+    color: #2c3e50;
+    position: fixed; /* le button est fixe à 40px du bas et à 20 de droite de la nav */
+    bottom: 40px;
+    right: 20px;
+}
+
+/* page texte voir aussi blockquote */
+
+.clear {
+    clear: both;
+}
+
+p {
+    padding: 5px;
+}
+
+/* fin page texte */
+
+/* page sélecteurs */
+.select p {
+    color: #ce3e39;
+    /* background: #fff; */
+}
+
+.select p:first-of-type { /* "p:first-of-type" : le premier enfant ici c'est : "p" désigné */
+    background: pink;
+}
+
+.select p:last-of-type { /* "p:last-of-type" : le dernier enfant ici c'est : "p" désigné */
+    background: rgb(148, 218, 146);
+    width: 300px;
+}
+
+.select p:nth-of-type(4), p:nth-of-type(6) {
+    background: rgb(221, 175, 48);
+    width: 500px;
+}
+
+/* .select *:last-child {
+    font-size: 30px;
+    border: thin solid#333;
+} */
+
+.select .zoneA {
+    color:  rgb(87, 71, 156);
+}
+.select .zoneB {
+    color:  rgb(14, 10, 0);
+}
+.select .zoneC {
+    color:  rgb(0, 27, 91);
+}
+.select .zoneD {
+    color:  rgb(173, 46, 24);
+}
+
+.select div:not(.zoneB) {
+    font-size: 50px;
+}
+
+.select .zoneB .couleurbleu {
+    color: blue;
+    font-size: 16px;
+}
+
+.select #zoneD span {
+    color: #34690d;
+    font-style: italic;
+}
+/* fin sélecteurs */
+
+/* début page image */
+.imagefond {
+    background: #000 url('../img/fond.jpg') no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.imagefond p {
+    width: 75%;
+    margin: 100px auto 250px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 10px;
+    font-size: 120%;
+}
+
+img[src="img/toureiffel.jpg"] { /* on cible que cette image là */
+    margin: auto;
+    display: block;
+    padding: 20px;
+    background: wheat;
+}
+
+.imagegolden {
+    margin: 20px;
+    border: 5px solid#eee;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+
+.imagegolden:hover {
+    transform: rotate(-7deg);
+    border: 15px solid #fff;
+}
+
+.aucentre {
+    text-align: center;
+}
+
+.rotation360:hover {
+    transform: rotate(-360deg);   /* transform: rotateZ(-3600000deg); + transition-duration: 500s; l'image tourne vite et a chaque fois qu'on rajoute des 00 */ 
+}
+/* fin page image */
+
+/* page position */
+.centre {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background: #6acafc;
+}
+
+.absolute {
+    position: absolute; /* absolute c'est fixed paraport à son parrent // fixed c'est paraport la fenêtre de navigateur */ /* voir aussi le button */
+    top: 24%;
+    left: 10%;
+    background: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+/* positions relatives */
+.relative {
+    background: #ce3e39;
+    width: 400px;
+    height: 400px;
+    position: relative;/*  relative à la section dans laquelle se trouve la div .relative */
+    left: 100px;
+    bottom: 10px;
+}
+
+.relative div {
+    background: peru;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.trente {
+width: 30%;
+background: red;
+padding: 20px;
+color: #10828c;
+font-size: 22px;
+}
+
+.cinquante {
+width: 50%;
+background: olive;
+padding: 20px;
+color: #fff;
+font-size: 22px;
+}
+
+.cent {
+ width: 100%;
+ background: orangered;  
+ padding: 20px;
+ color: green; 
+ font-size: 22px;
+}
+
+/* page position float */
+.float {
+height: 170px;
+width: 170px;
+background: #fff1a8;
+margin: 10px;
+float: left;
+padding-top: 2px;
+font-size: 25px;
+border: 2px solid darkred;
+}
+
+.dernier {
+    height: 170px;
+    width: 170px;
+    background: #f8d871;
+    margin: 10px;
+    padding-top: 2px;
+    font-size: 25px;
+    border: 2px solid darkred;
+    }
+
+.zone {
+    height: 70px;
+    background: #333;
+    }
+
+    .zone1, .zone2, .zone3, .zone4 {
+        height: 250px;
+        width: 25%;
+        float: left;
+    }
+
+    .zone1{
+        background: #2d5c7f;
+    }
+
+
+    .zone2{
+        background:#fff1a8;
+    }
+
+    .zone3 {
+        background:#ff8f56;
+    }
+
+    .zone4 {
+        background: #984a59;
+    }
+/* fin page position */
+/* exercise sur le float */
+
+
+.flex {
+    display: flex;
+    /* également répartis horizontalement */
+    /* justify-content: space-between;  */
+
+    /* espace égale autour de chaque div */
+    /* justify-content: space-around; */
+
+    /* direction en colonne de haut en bas */
+    /* flex-direction: column; */
+
+    flex-direction: row-reverse;
+}
+
+.flex div {
+    width: 150px;
+    height: 150px;
+    background: #984a59;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+/* page des zoning */
+
+/* ***************zoning 1****************** */
+#zoning1 {
+    background: #333;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    text-shadow: 1px 1px 2px white;
+}
+
+#zoning1 header {
+    height: 70px;
+    background: #f7f39a;
+}
+
+#zoning1 aside {
+   height: 525px;
+   width: 20%;
+   float: left;
+   background: #a3de83;
+}
+
+#zoning1 section {
+    height: 525px;
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/****************zoning 2*************** */
+
+#zoning2 {
+    background: #f7f39a;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+#zoning2 header {
+    height: 70px;
+    background: purple;
+    
+}
+
+#zoning2 aside {
+   height: 525px;
+   width: 20%;
+   float: left;
+}
+
+#zoning2 .middle {
+    float: left;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+/* fin zoning2 */
+
+/* zoning3 */
+#zoning3 {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+ }
+ 
+ #zoning3 section {
+    width: 50%;
+    height: 525px;
+    float: left;
+    background: #468546;
+    border: 1px solid #333;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ #zoning3 footer {
+    width: 100%;
+    height: 70px;
+    float: left;
+    background: red;
+    color: #333;
+    border: inherit;
+    border-radius: inherit;
+    margin: 0;
+ }
+ 
+ /* fin zoning3 */
+
+ /* zoning 4 */
+ #zoning4 {
+    width: 700px;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+ }
+ 
+ #zoning4 header {
+    height: 100px;
+    background: #32ff32;
+ }
+ 
+ #zoning4 nav {
+    height: 50px;
+    border: none;
+ }
+ 
+ #zoning4 section {
+    height: 500px;
+    margin: 20px;
+    background: hotpink;
+    padding: 0;
+}
+
+#zoning4 footer {
+    border: inherit;
+    border-radius: inherit;
+    width: 100%;
+    height: 50px;
+    background: moccasin;
+    margin: 0;
+    color: #333;
+ }
+
+ /* fin zoning 4 */
+
+ /* zoning 5 */
+ #zoning5 {
+    background: #a3de83;
+    margin: 0;
+    text-align: center;
+    border: thin solid red;
+ }
+ 
+ #zoning5 header {
+    background: #be32ff;
+    height: 100px;
+ }
+ 
+ #zoning5 nav {
+    height: 50px;
+    background: rgb(241, 107, 187);
+    border-bottom: 8px solid#333;
+ }
+ 
+ #zoning5 section {
+    margin: 20px;
+    background: #176d81;
+    padding: 0;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+    height: 250px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+    line-height: 250px;
+}
+#zoning5 .z1, .z4 {
+    background: #2c3e50;
+}
+
+#zoning5 .z2, .z3 {
+    background: olive;
+}
+
+#zoning5 footer {
+    border: inherit;
+    border-radius: inherit;
+    width: 100%;
+    height: 100px;
+    background: moccasin;
+    margin: 0;
+    color: #333; 
+}
+ /* fin zoning 5 */
+ 
+ /* zoning 6 */
+ #zoning6 {
+    width: 800px;
+    margin: 0 auto;
+    color: fuchsia;
+ }
+
+ #zoning6 header {
+     background: green;
+     height: 200px;
+ }
+
+ .haut1 {
+     width: 25%;
+     float: left;
+     height: 100%;
+ }
+
+ .haut2 {
+    width: 50%;
+    float: left;
+    background: turquoise;
+    height: 100%;
+}
+
+.haut3 {
+    width: 25%;
+    float: left;
+    background: teal;
+    height: 100%;
+}
+
+#zoning6 nav {
+    border: none;
+    height: 100px;
+}
+
+#zoning6 aside {
+    width: 25%;
+    float: left;
+    background: thistle;
+    height: 700px;
+}
+
+#zoning6 section {
+    float: left;
+    width: 75%;
+    background: #a3de83;
+    margin: 0;
+    padding: 0;
+}
+
+#zoning6 .a {
+    height: 250px;
+    background: wheat;
+    float: left;
+    width: 50%;
+}
+
+#zoning6 .b {
+    height: 250px;
+    background: whitesmoke;
+    float: left;
+    width: 50%;
+}
+#zoning6 .diaporama {
+    height: 250px;
+    background: #32ff32;
+}
+
+#zoning6 .c, .e {
+    width: 25%;
+    background: #ce3e39;
+    float: left;
+    height: 200px;
+    
+}
+
+#zoning6 .f, .d {
+    width: 25%;
+    background: pink;
+    float: left;
+    height: 200px;
+    
+}
+ /* fin zoning 6 */
+
+ /* page tableau */
+
+ 
+ .tableau table {
+     border-collapse: collapse;
+     border: 2px solid #205d67;
+     margin: auto;
+     width: 80%;
+     padding: 5px;
+ }
+
+ .tableau td {
+    border: 2px solid #205d67;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tableau thead, .tableau tfoot {
+    background: #d0e3fa;
+    border: 4px solid #09021d;
+    text-align: center;
+}
+
+.tableau caption {
+    background: #dd86d1;
+    border: 1px solid #6495ed;
+    height: 50px;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 200px;
+    background: #454858;
+    margin-top: 20px;
+}
+
+.nav1 {
+    width: 20%;
+    height: 140px;
+    color: black;
+    display: inline-block;
+    border-right: 1px solid black;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.fin {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 35%;
+    height: 180px;
+    display: inline-block;
+   
+}
+
+footer nav a {
+    text-decoration: none;
+}
