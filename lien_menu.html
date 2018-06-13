@@ -14,7 +14,7 @@
     <meta name="keywords" content="HTML, CSS, Setti BELKACEM, LePoleS, pantin">
     <!-- l'auteur de la page -->
     <meta name="autor" content="Setti BELKACEM"> 
-    <title>Site PHASE 2 - acceuil</title>
+    <title>Site PHASE 2 - Lien_menu</title>
     <!-- ma feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -63,26 +63,99 @@
 
     <!-- contenu principale -->
     <main>
-        <aside><!-- contenu secondaire -->
-        </aside>
-        <section>
-            <div><!-- zone supplémentaire de contenu div -->
-                <h2>Ici titre 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, provident cupiditate. Dolor unde error blanditiis pariatur natus quos doloremque autem ipsa alias. Ullam, accusantium eligendi. Quibusdam ad tenetur maiores eum.</p>
-            </div>
-            <span><h3>Ici le titre 3</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis tenetur quas quo, aliquam beatae doloremque harum! Aspernatur nulla quo velit adipisci accusamus unde voluptate blanditiis atque debitis quia. Velit, quam.</p>
-            </span><!-- zone supplémentaire de contenu span -->
-            <article><h4>Un titre 4</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, enim fugit similique quam facilis veritatis quas sit alias praesentium repellendus quibusdam fuga quae ut molestias architecto esse laboriosam doloremque ipsam?</p>
-            </article><!-- zone supplémentaire de contenu article -->
+        <div class="ancre">
+            <a href="#lien">Les liens</a>
+            <a href="#menu">Menu</a>
+            <a href="#menuDeroulant">Menu déroulant</a>
+        </div>
+        <hr>
+        <section id="lien">
+            <h3>Les Liens</h3>
+            <a href="https://codepen.io/collections/2/#" target="_blank" title="le site de CodePen">CodePen pour s'entraîner au code</a><br>
+            <!-- un lien tout simple -->
+            <a href="https://fontawesome.com/icons?d=gallery" target="_blank" title="Fontawesome"> site fontawesome pour intégrer des icônes</a><br>
+            <!-- telecharger un .pdf -->
+            <a href="fichier/Planning Pantin 2018-2019 V4.pdf" target="_blank" title="le planning">Télécharger le planning du chantier des nums de Pantin</a><br>
+            <a href="#" onclick="window.print()">Imprimer la page</a><br> 
+            <a href="http://www.auvergne-tourisme.info" target="_blank"><img src="img/l'auvergne.jpg" alt="L'auvergne"></a>
+            
+        </section>
+        <section id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Réalisations</a></li>
+                        <li><a href="#">ontact</a></li>
+                    </ul>
+                </nav>
+        </section>
+        <hr>
+        <section id="menuDeroulant">
+            <h3>Les menus déroulants</h3>
+            <nav>
+                <ul class="niveau1">
+                    <li><a href="#" title="Accueil">Accueil</a></li>
+                    <li class="sousMenu">
+                        <a href="#" title="Formation">Formation</a>
+                        <ul class="niveau2">
+                            <li><a href="#">Etudiant</a></li>
+                            <li><a href="#">Emploi du temps</a></li>
+                            <li><a href="#">Recherche d'emploi</a></li>
+                            <li><a href="#">Documents</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#" title="Information">Information</a></li>
+                    <li class="sousMenu">
+                        <a href="#" title="Cours">Cours</a>
+                        <ul class="niveau2">
+                            <li><a href="#">Internet</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#">Réseaux</a></li>
+                            <li><a href="#">Référencement</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Cahier des charges</a></li>
+                            <li><a href="#">Photoshop</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Mon CV">Mon CV</a></li>
+                </ul>
+            </nav>
         </section>
     </main>
     <!-- fin main -->
 
     <!-- pied de page -->
-    <footer>
-    </footer>
+        <footer>
+            <div class="nav1">
+                <ul>
+                    <li><a href="index.html" title="Acceuil">Acceuil</a></li>
+                    <li><a href="texte.html" title="texte">Texte</a></li>
+                    <li><a href="selecteur.html" title="selecteur">Selecteur</a></li>
+                    <li><a href="image.html" title="image">Image</a></li>
+                </ul>
+            </div>
+            <div class="nav1">
+                <ul>
+                    <li><a href="position.html" title="position">Position</a></li>
+                    <li><a href="zoning.html" title="zoning">Zoning</a></li>
+                    <li><a href="tableau.html" title="tableau">Tableau</a></li>
+                    <li><a href="liste.html" title="liste">Liste</a></li>
+                </ul>
+            </div>
+            <div class="nav1">
+                <ul>
+                    <li><a href="lien_menu.html" title="lien_menu">Lien_menu</a></li>
+                    <li><a href="formulaire.html" title="formulaire">Formulaire</a></li>
+                    <li><a href="multimedia.html" title="multimédia">Multimédia</a></li>
+                    <li><a href="animation.html" title="animation">Animation</a></li>
+                </ul>
+            </div>
+                <div class="fin"><iframe src="" frameborder="0"></iframe></div>
+        </footer>
 
 </body>
 </html>

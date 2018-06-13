@@ -14,7 +14,7 @@
     <meta name="keywords" content="HTML, CSS, Setti BELKACEM, LePoleS, pantin">
     <!-- l'auteur de la page -->
     <meta name="autor" content="Setti BELKACEM"> 
-    <title>Site PHASE 2 - acceuil</title>
+    <title>Site PHASE 2 - Liste</title>
     <!-- ma feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -63,25 +63,93 @@
 
     <!-- contenu principale -->
     <main>
-        <aside><!-- contenu secondaire -->
-        </aside>
+        <h2>Les Listes</h2>
         <section>
-            <div><!-- zone supplémentaire de contenu div -->
-                <h2>Ici titre 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, provident cupiditate. Dolor unde error blanditiis pariatur natus quos doloremque autem ipsa alias. Ullam, accusantium eligendi. Quibusdam ad tenetur maiores eum.</p>
-            </div>
-            <span><h3>Ici le titre 3</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis tenetur quas quo, aliquam beatae doloremque harum! Aspernatur nulla quo velit adipisci accusamus unde voluptate blanditiis atque debitis quia. Velit, quam.</p>
-            </span><!-- zone supplémentaire de contenu span -->
-            <article><h4>Un titre 4</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, enim fugit similique quam facilis veritatis quas sit alias praesentium repellendus quibusdam fuga quae ut molestias architecto esse laboriosam doloremque ipsam?</p>
-            </article><!-- zone supplémentaire de contenu article -->
+            <h3>Les listes ul</h3>
+            <ul class="fruit">
+                <li class="fruit" ><i class="far fa-hand-spock" aria-hidden="true"></i> Orange</li>
+                <li><i class="far fa-hand-spock" aria-hidden="true"></i> Fraise</li>
+                <li><i class="far fa-hand-spock" aria-hidden="true"></i> Poire</li>
+            </ul>
         </section>
-    </main>
-    <!-- fin main -->
+        <hr>
+        <h3>Listes imbriquées</h3>
+        <div id="liste02">
+            <ul class="imbriquee"> <!-- ul>li*3 pour tout faire -->
+                <li class="europe">Europe
+                    <ul> <!-- ul>li*3 pour fabriquer la liste avec 3 li -->
+                        <li>France</li>
+                        <li>Italie</li>
+                        <li>Espagne</li>
+                        <li>Malte</li>
+                        <li>Allemagne</li>
+                    </ul>
+                </li>
+                <li class="asie">Asie
+                    <ul>
+                        <li>Japon</li>
+                        <li>Vietnam</li>
+                        <li>Chine</li>
+                        <li>Laos</li>
+                        <li>Corée</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h3>La suite des Listes </h3>
+        <div>
+            <ul>
+                <ol>Liste des pays du Moyen Orient
+
+                    <li>Arabie saoudite</li>
+                    <li>Bahreïn</li>
+                    <li>Irak</li>
+                    <li>Irak</li>
+                    <li>Liban</li>
+                </ol>
+            
+                <dl>
+                    <li>Algerie</li>
+                    <li>Tunisie</li>
+                    <li>Marroc</li>
+                    <li>La Libye</li>
+                    <li>La Mauritanie</li>
+                </dl>
+            </ul>
+
+        </div>
+        
+    </main><!-- fin main -->
+    
 
     <!-- pied de page -->
     <footer>
+            <div class="nav1">
+                    <ul>
+                        <li><a href="index.html" title="Acceuil">Acceuil</a></li>
+                        <li><a href="texte.html" title="texte">Texte</a></li>
+                        <li><a href="selecteur.html" title="selecteur">Selecteur</a></li>
+                        <li><a href="image.html" title="image">Image</a></li>
+                    </ul>
+                </div>
+                <div class="nav1">
+                    <ul>
+                        <li><a href="position.html" title="position">Position</a></li>
+                        <li><a href="zoning.html" title="zoning">Zoning</a></li>
+                        <li><a href="tableau.html" title="tableau">Tableau</a></li>
+                        <li><a href="liste.html" title="liste">Liste</a></li>
+                    </ul>
+                </div>
+                <div class="nav1">
+                    <ul>
+                        <li><a href="lien_menu.html" title="lien_menu">Lien_menu</a></li>
+                        <li><a href="formulaire.html" title="formulaire">Formulaire</a></li>
+                        <li><a href="multimedia.html" title="multimédia">Multimédia</a></li>
+                        <li><a href="animation.html" title="animation">Animation</a></li>
+                    </ul>
+                </div>
+                <div class="fin"><iframe src="" frameborder="0"></iframe></div>
     </footer>
 
 </body>

@@ -1,0 +1,64 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script>
+	if (window.addEventListener) {
+        window.addEventListener("message", receiveMessage, true);
+    }
+    else if (window.attachEvent) {
+         window.attachEvent("onmessage", receiveMessage);
+    }  
+	function receiveMessage(event)  
+    { 
+        if( typeof( event.data ) != "string" ) return;
+		if( event.data.indexOf( "__lit") == 0 ) 
+		{
+            var fnLock = function() { 
+				var parse = event.data.match(/^(__lit)(lock)?([a-zA-Z0-9\-]{36})(.*)$/i);
+				var maintenant = new Date().getTime();
+                try 
+                {
+				    if( !parse[2] || ( window.localStorage[ parse[4] + "__lock" ] || 0 ) < maintenant )
+                    {
+					    if( parse[2] )
+					    {
+						    // console.log("lock [" + parse[4] + "]" );
+						    window.localStorage[ parse[4] + "__lock" ] = maintenant + ( 30 * 1000 );
+					    }
+                        var exp = window.localStorage[ parse[4] + "__exp" ];					
+					    var donnees = ( exp && parseInt( exp, 10 ) > maintenant ? window.localStorage[ parse[4] ] : "" );
+					    // console.log("lit [" + parse[4] + "] [" + donnees + "]");
+					    event.source.postMessage( parse[1] + parse[3] + donnees, event.origin );
+                    }
+                    else
+					    setTimeout( fnLock, 100 );
+                }
+                catch( err ) {
+                    event.source.postMessage( parse[1] + parse[3], event.origin );
+                }
+            };
+            fnLock();
+		}
+		else if( event.data.indexOf( "__ecrit") == 0 )
+		{
+			var parse = event.data.match(/^__ecrit(.*)__expiration(.*)__donnees(.*)$/i);
+			// console.log("écrit [" + parse[1] + "] [" + parse[3] + "]" );                			
+            try {
+                window.localStorage[ parse[1] ] = parse[3];
+			    window.localStorage[ parse[1] + "__exp" ] = ( parse[2] == "" ? "0" : parse[2] );            
+            }
+            catch(err)
+            {
+            }
+		}
+		else if( event.data.indexOf( "__unlock") == 0 )
+		{
+			var parse = event.data.match(/^__unlock(.*)$/i);
+			// console.log("unlock [" + parse[1] + "]" );
+            try {
+                window.localStorage[ parse[1] + "__lock" ] = 0;
+            }catch(err)
+            {
+            }
+		}
+    }
+</script>
+</head><body></body></html>

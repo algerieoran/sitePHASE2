@@ -51,6 +51,7 @@ h2 {
     font-weight: bold;
     padding: 20px;
     text-shadow: 1px 1px 2px #aaa;
+    text-align: center;
 }
 
 h3 {
@@ -156,7 +157,7 @@ nav a {
     transition: 0.5s; /* transition sur le a marche avec le :hover */
 }
 
-nav a :hover {
+nav a:hover {
     color: #fff;
     background: #a6d6c3;
 }
@@ -748,6 +749,206 @@ border: 2px solid darkred;
     text-align: left;
     padding-left: 5px;
 }
+/* fin page tableau */
+
+/* la page liste */
+/* la liste de fruit avec  */
+ul.fruit {
+    list-style: none;
+}
+
+ul.fruit li {
+    display: inline;
+    margin: 15px;
+}
+
+li .far {
+    font-size: 90%;
+    color: green;
+}
+
+li .far:hover {
+    font-size: 150%;
+    color: #4c16df;
+}
+
+.imbriquee, .imbriquee ul {
+    padding-left: 15px;
+}
+
+.imbriquee {
+    cursor: pointer;
+}
+
+.imbriquee ul {
+    display: none;
+}
+
+.europe:hover ul, .asie:hover ul {
+    display: block;
+}
+
+.imbriquee li ul li:hover {
+    font-size: 200%;
+    background: #2980b9;
+    display: inline;
+    box-shadow: 5px 10px 10px gray;
+    transition-duration: 1s;
+}
+/* fin page des listes */
+
+/* page de liens */
+.ancre {
+    text-align: center;
+    padding: 20px;
+}
+
+.ancre a {
+    margin: 8px;
+   padding: 5px 10px;
+   border-radius: 15px;
+   background:  #2c3e50;
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+   box-shadow: 0px 0px 10px 3px black;
+}
+
+.ancre a:hover {
+    box-shadow: none;
+    transition-duration: 0.5s;
+    text-shadow: 1px 5px 10px gray;
+}
+
+/* la nav dans l'id menu */
+#menu nav {
+    background: transparent;
+    border: none;
+}
+
+#menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li {
+   display: inline-block;
+}
+#menu nav a {
+   padding: 10px;
+   color: gray;
+   text-decoration: none;
+   background: #ddd;
+   transition: 1s ease-in; /*  Lent sur le début et accélère de plus en plus vers la fin */ 
+}
+
+#menu nav a:hover {
+    background: #069;
+   color: #fff;
+}
+
+/* les menu déroulants */
+
+#menuDeroulant {
+    height: 650px;
+}
+
+#menuDeroulant nav {
+    background: transparent;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#menuDeroulant nav ul li {
+   float: left;
+   list-style: none; 
+   width: 20%;
+}
+
+#menuDeroulant ul ul {
+    display: none;
+}
+
+#menuDeroulant nav ul li ul li {
+    border-top: 1px solid #464646;
+    width: 100%;
+}
+
+#menuDeroulant nav li {
+    background: #ccc;
+}
+
+#menuDeroulant nav li a {
+    padding: 4px 0 4px;
+    display: block;
+}
+
+#menuDeroulant  ul {
+    text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+    display: block;
+}
+/* fin page des menus déroulants */
+
+/* page formulaire */
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    background: #2d5c7f;
+    color: #6acafc;
+    border-radius: 20px;
+}
+label {
+    margin: 20px 10px;
+}
+
+textarea {
+    resize: none;/* empêche le redimensionnement du champ commentaire */
+}
+
+label[for="orange"], label[for="fraise"], label[for="kiwi"], label[for="cerise"]  {
+    width: 13%;
+    background: red;
+}
+/* fin page formulaire */
+/* page Multimédia */
+
+.videoFond {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.videoFond video {
+   position: absolute;
+   width: 100%;
+   z-index: 1;/* l'empilement de z-order : le 1 est plus bas que le 2 */
+}
+
+.videoTexte {
+    position: relative;/* la position relative permet de décaler un élément par rapport à sa position normale */
+    width: 100%;
+    height: 500px;
+}
+
+.videoFond p {
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    margin: auto; 
+    padding: 20px;
+    background: rgba(178, 178, 0, 0.30);
+    left: 250px;
+    top: 150px;
+    border-radius: 10px;
+}
+
+
+/* fin page Multimédia */
 
 /* footer */
 
