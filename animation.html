@@ -7,7 +7,8 @@
         <!-- les typos google font anton oswald lemonada -->
         <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
         <!-- font awesome en cdn -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+        <link href="css/fontawesome-all.css" rel="stylesheet">
         <!-- la description qui s'affiche sur un résultat de recherche google -->
         <meta name="descrption" content="Site de la phase 2 Setti BELKACEM pantin 2018/2019 LePoleS">
         <!-- les mots clefs utiles pour les moteurs de recherche -->
@@ -63,13 +64,56 @@
 
         <!-- contenu principale -->
         <main>
-            <h2>Animation</h2>
+            
+            <h2>Animation en CSS <i class="fas fa-exclamation-circle"></i></h2>
+            <section>
+                <h3>Infobulles</h3>
+                <div class="infoBulle">
+                    <p>
+                        <a href="#">Passez la souris ! <span>Coucou ; je suis une pop-up <i class="fas fa-comment"></i></span></a>
+                    </p>
+                    <p>
+                        <a href="#">Ici aussi....<span>Et moi aussi je suis une pop-up !!  <i class="fas fa-comment-alt"></i></span></a>
+                    </p>
+                    <p>
+                        <a href="#">Une fois encore, allez ! <span>Et moi je suis la benjamine ;-)  <i class="fas fa-comment-dots"></i></span></a>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Effets de survol avec des transitions et des filtres - <i class="fas fa-hand-point-right"></i> </h3>
+                <ul class="imgEffets">
+                    <li><img src="img/survol_img1.jpg" alt="la nature c'est beau"></li>
+                    <li><img src="img/survol_img2.jpg" alt="la nature c'est beau"></li>
+                    <li><img src="img/survol_img3.jpg" alt="la nature c'est beau"></li>
+                    <li><img src="img/survol_img4.jpg" alt="la nature c'est beau"></li>
+                </ul>
+            </section>
+            <hr>
+
+            <section>
+                <h3>Rotation d'un menu en CSS3</h3>
+                <article id="menuRotate">
+                    <dl class="menu">
+                        <dt class="btnRot">Partager</dt>
+                        <dd><a href="#">...</a></dd>
+                        <dd><a href="#">Google +</a></dd>
+                        <dd><a href="#">Facebook</a></dd>
+                        <dd><a href="#">Twitter</a></dd>
+                    </dl>
+                    <div class="masque"></div>
+                    <div class="ombre"></div
+                </article>
+            </section>
+            <div class="clear"></div>
+
         </main>
         <!-- fin main -->
 
         <!-- pied de page -->
         <footer>
-            <div class="nav1">
+            <!-- <div class="nav1">
                 <ul>
                     <li><a href="index.html" title="Acceuil">Acceuil</a></li>
                     <li><a href="texte.html" title="texte">Texte</a></li>
@@ -93,7 +137,7 @@
                     <li><a href="animation.html" title="animation">Animation</a></li>
                 </ul>
             </div>
-                    <div class="fin"><iframe src="" frameborder="0"></iframe></div>
+                    <div class="fin"><iframe src="" frameborder="0"></iframe></div> -->
         </footer>
 
     </body>
