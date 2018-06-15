@@ -1,0 +1,165 @@
+<!-- les liens permettent de se déplacer à l'intérieur des rubriques d'un site. Ce sont pour les principaux des liens de navigation et on les regroupe dans un menu (barre de navigation) -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style_recap.css">
+    <title>Menu de navigation et propriétés CSS</title>
+</head>
+<body>
+
+    <!-- la balise NAV est dédiée à la navigation du site -->
+    <nav>
+        <a href="recap.html">Accueil</a>
+        <a href="#">Edito</a>
+        <a href="#">Panier</a>
+        <a href="#">FAQ</a>
+        <a href="#">Nous contacter</a>
+    </nav><br />
+
+    <section class="container">
+        <h3>Aide mémoire des sélecteurs CSS déjà vus</h3>
+            <ul>
+                <li><mark>*</mark> sélectionne TOUS les éléments de la page html</li>
+                <li><mark>.ma-jolie-nav</mark> sélectionne tous les éléments ayant le nom de class "ma-jolie-nav"</li>
+                <li><mark>#mon-unique-id</mark> sélectionne tous les éléments ayant le nom de mon id "mon-unique-id"</li>
+                <li><mark>div, article, aside</mark> sélectionne toutes les balises &lt;div>, &lt;article> ET &lt;aside></li>
+                <li><mark>nav a</mark> sélectionne les liens &lt;a> inclus/imbriqués dans la balise &lt;nav></li>
+                <li>nav a<mark>:hover</mark> sélectionne tous les liens de la nav et active une animation lors du survol de la souris</li>
+            </ul><br />
+    </section>
+
+    <div class="container1">
+        <section class="container2">
+            <h3>Propriétés CSS utilisées dans cette page</h3>
+            <h4>Décrivez leur usage et leurs valeurs possibles</h4>
+                <ol>
+                    <li>background: couleur du fond de l'élément
+                            <ul>
+                                <li>background sert a donner un fond de couleur "white, green, #333, rgbe(12,22,22,0.1)"" à un élément</li>  
+                            </ul>
+
+                    </li>
+
+                    
+                    <li>color: couleur de la police</li>
+                    <ul>
+                        <li> <a href=" http://www.css-faciles.com/premiers-pas-css.php" title=""></a>lien vers la page</li>
+                    </ul>
+
+                    <li>float: effet flottant
+                        <ul>
+                            <li>Défini le positionnement d'un élément dans le conteneur. La valeur left placera l'élément à gauche dans le conteneur, la valeur right à droite, la valeur none annule ce positionnement.</li>
+                        </ul>
+                    </li>
+
+                    <li>font-family: police
+                    <ul>
+                        <li>Elle définit la police de caractère utilisée</li>
+                        <li>Lors du chargement de la page, le navigateur cherche sur votre ordinateur la police déclarée.</li>
+                        <li>Cette propriété possède un ordre de déclaration. Par exemple pour "font-family: Verdana, Geneva, sans-serif" le navigateur cherchera la police Verdana, s'il ne la trouve pas, il affichera le paramètre 2, soit la police Geneva, ainsi de suite.</li>
+                        <li>ex : police1, police2, police3, serif, sans-serif, monospace</li>
+                    </ul>
+
+                    </li>
+                    <li>font-size: taille de la police ; ex : 1.3em, 16px, 120%...
+                        <ul>
+                            <li>Elle définit la taille de la police de caractère. Elle prend comme paramètre un nombre et une unité qui représenteront une taille.</li>
+                            <li> Elle s'exprime en %, em (taille relative, 1.0 étant le normal), un nom (medium, large, ...) ou en pixels (la plus utilisée).</li>
+                        </ul>
+                    </li>
+
+                    <li>height: hauteur de l'élément
+                        <ul>
+                            <li>Cette propriété est utilisée pour attribuer une valeur de hauteur à un élément.</li>
+                            <li>Elle permet de déterminer une dimensions fixe, elle est aussi utilisée pour appliquer des limites de dimensions.</li>
+                            <li>Un bloc ayant des valeurs "auto" (il se dimensionne automatiquement par rapport à son contenu) peut etre complété par des indications de dimensions minimales     et maximales. Cette dimension est généralement exprimée en px ou % et ces propriétés se déclinent en 3 combinaisons : height, min-height et max-height.</li>
+                        </ul>
+                    </li>
+                    <li>left: position à partir de la gauche de la fenêtre
+                        <ul>
+                            <li>Propriété permettant de positionner le contenu à gauche</li>
+                            <li>Sa valeur s'exprime en px</li>
+                        </ul>
+                    </li>
+                    <li>line-height: hauteur de l'interligne
+                        <ul>
+                            <li>Elle définit la hauteur occupée par une ligne dans votre texte. Sa valeur s'exprime généralement en px et permet, notamment, de centrer un texte dans un bouton à hauteur fixe (en affectant une valeur line-height identique à la hauteur du bouton). </li>
+                            <li>sa valeur s'exprime le plus souvant en px ou en %</li>
+                        </ul>
+                    </li>
+                    <li>margin: marges extérieures
+                        <ul>
+                            <li>Cette super-propriété applique des marges extérieures à l'élément concerné, c'est à dire un décalage de sa position par rapport au conteneur selon des valeurs déterminées.</li>
+                            <li>Elle remplace les 4 propriétés margin, à savoir margin-top, margin-right, margin-bottom et margin-left. On peut définir une valeur pour chaque coté en respectant l'ordre de lecture du navigateur (haut, droite, bas, gauche).</li>
+                            <li>Une seule valeur saisie applique une marge identique à celle-ci sur chaque coté. Deux valeurs saisie applique une marge bas et haut identique à la première valeur et gauche et droite à la seconde.</li>
+                            <li>Ne saisissez pas 3 valeurs, le résultat sera aléatoire, saisissez les 4 en remplaçant la valeur du coté sans marge par un 0. Les valeurs de marges sont exprimées en px ou em. Exemple : .element { margin: 10px 50px 5px 80px; } Mon élément décalé des éléments qui l'entourent de 10px en haut, 50px à droite, 5px en bas et 80px à gauche.</li>
+                        </ul>
+                    </li>
+                    <li>padding: marges intérieures
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>position: position de l'élément dans la page (on n'a utilisé que la valeur (fixed) pour l'instant)</li>
+                    <li>text-align: alignement du texte</li>
+                    <li>text-decoration: changement des valeurs héritées (ici le souligné qui est standard pour les liens sous tous les navigateurs est supprimé)</li>
+                    <li>top: position à partir du haut de la fenêtre</li>
+                    <li>transition: temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
+                    <li>width: largeur de l'élément par rapport à la taille de la fenêtre si on indique une valeur relative (%, em, ...)</li>
+                    <li>font style:
+                        <ul>
+                            <li>Elle détermine l'orientation de la police. 3 valeurs aux choix : italic, oblique, normal (par défaut).</li>
+                        </ul>
+                    </li>
+                </ol>
+        </section>
+
+        <section class="container3">
+            <h3>Propriétés CSS à rechercher</h3>
+            <h4>Recherchez les propriétés ci-dessous, faites des tests avec sur cette page depuis la console de débuggage pour tester les valeurs qu'elles peuvent prendre</h4>
+                <ol>
+                    <li>font-weight:
+                        <ul>
+                            <li>Elle définit l'épaisseur de la police. 4 possibilités : bold, bolder, lighter et normal (par défaut). </li>
+                        </ul>
+                    </li>
+                    <li>letter-spacing:</li>
+                    <li>word-spacing</li>
+                    <li>text-shadow:</li>
+                    <li>background-image:</li>
+                    <li>background-size:</li>
+                    <li>opacity:</li>
+                    <li>border-style:</li>
+                    <li>box-shadow:</li>
+                    <li>list-style-image:</li>
+                    <li>border:</li>
+                    <li>border-radius:</li>
+                    <li>border-width:</li>
+                    <li>font-variant:</li>
+                    <li>background-color:</li>
+                    <li>!important;</li>
+                </ol>
+        </section>
+        <div class="clear"></div>
+    </div><!-- fin DIV CONTAINER1 -->
+
+    <section class="container container4">
+        <h3>Pour aller plus loin en CSS, quelques pistes...</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN le site officiel</a></li>
+                <li><a href="https://tympanus.net/codrops/">Codrops, références, tutos...</a></li>
+                <li><a href="https://flukeout.github.io/">Jeu avec les sélecteurs CSS</a></li>
+                <li><a href="http://flexboxfroggy.com/">Un autre jeu sur le système des "Flexbox"</a></li>
+                <li><a href="http://viewportsizes.com/">Différentes tailles d'écrans</a></li>
+                <li><a href="http://fr.learnlayout.com/">Tutos simples en français</a></li>
+                <li><a href="https://purecss.io">Encore des tutos</a></li>
+                <li><a href="https://www.w3c.org/Style/CSS/learning">Le site du W3C (partie CSS)</a></li>
+            </ul>
+    </section>
+
+</body>
+</html>

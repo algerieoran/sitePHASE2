@@ -190,6 +190,21 @@ footer {
     background: #2980b9;
 }
 /* fin des zones principales */
+/* le zoning sur la page d'accueil */
+
+#zoning0 aside {
+    width: 30%;
+    height: 750px;
+    float: left;
+}
+
+#zoning0 section {
+    width: 70%;
+    height: 750px;
+    float: left;
+    margin-top: 0;
+    border: 2px solid grey;
+}
 
 /* le retour en haut de page */
 
@@ -1137,6 +1152,11 @@ iframe[allowfullscreen] {
     padding-top: 5px;
 }
 
+#menuRotate dl .btnRot {
+    font-size: 0.8em;
+    color: #168ab8;
+}
+
 #menuRotate dd {
     transform: rotate(180deg);
 }
@@ -1155,7 +1175,23 @@ iframe[allowfullscreen] {
 
 #menuRotate dl:hover {
     transform:  rotate(-180deg);
-    animation: bounceIn 3s ease-in-out;
+    animation: bounceIn 0.7s ease-in-out;
+}
+
+/* la règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. */
+
+@keyframes bounceIn {
+    from  {transform: rotate(0deg);}
+    75%{transform: rotate(-200deg);}
+    90% {transform: rotate(-175deg);}
+    to {transform: rotate(-180deg);}
+}
+
+@keyframes bounceOut {
+    from  {transform: rotate(0deg);}
+    0%{transform: rotate(-180deg);}
+    10% {transform: rotate(-165deg);}
+    to {transform: rotate(-360deg);}
 }
 
 
