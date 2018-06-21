@@ -1,0 +1,41 @@
+
+body{
+    background: palegreen;
+    margin: 0 auto;
+}
+/* ************************Les styles du Zoning 01**************************** */
+
+#wrapper{ /* la div wrapper */
+    background: plum;
+    margin: 0 auto;
+    width: 1200px;
+    height: 600px;
+}
+
+#wrapper header{ /* le header */
+    width: 1200px;
+    height: 150px;
+    background: lightblue;
+    text-align: center; 
+}
+
+#wrapper aside{ /* le aside  */
+    width: 200px;
+    height: 700px;
+    background: lightcoral;
+    text-align: center;
+    float: left;
+}
+
+#wrapper section{/* la section */
+    width: 1000px;
+    height: 700px;
+    background: olive;
+    text-align: center;
+    float: left;
+}
+.clear{ /* la div clear */
+    clear: both;
+}
+
+/* ************************Fin Zoning 01**************************** */
