@@ -1,0 +1,81 @@
+/* ************************zoning_titi***************************** */
+/* **********************Zoning01**************************** */
+
+body{
+    background: pink;
+}
+
+#zoning1{
+    width: 50%;
+    height: 800px;
+    margin: 0 auto;
+}
+
+#zoning1 header{
+    background: yellowgreen;
+    height: 100px;
+    text-align: center;
+}
+#zoning1 aside{
+    width: 20%;
+    height: 600px;
+    background: olive;
+    float: left;
+    text-align: center;
+}
+#zoning1 section{
+    background: orchid;
+    width: 80%;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+
+ #zoning1 footer{
+    background: purple;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* *************************Zoning 02********************************* */
+
+#zoning2{
+    background: palegoldenrod;
+    margin: 0 auto;
+    width: 50%;
+    height: 800px;
+}
+
+#zoning2 header{
+    background: olivedrab;
+    height: 100px;
+    text-align: center;
+}
+
+.div1{
+    background: brown;
+    width: 25%;
+    height: 800px;
+    float: left;
+}
+
+.div2{
+    background: lightpink;
+    width: 50%;
+    height: 800px;
+    float: left;
+}
+
+div3{
+    background: darkorange;
+    width: 25%;
+    height: 800px;
+    float: right;
+}
+
+
