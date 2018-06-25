@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* **********************les styles **********************/
+#container{
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    height: 200px;
+    background: palevioletred;
+}
+
+nav{
+    height: 100px;
+    background: olivedrab;
+}
+
+.section{
+    background: orchid;
+    height: auto;
+}
+
+.image{
+    float: left;
+    padding: 30px 10px 30px 10px;
+    /* ou on peut faire : -> position: relative; margin-left: 20%; */
+}
+
+
+section.section .bloc .image figure img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-transition:  all .5s ease-in-out;
+    -moz-transition: all.5s ease-in-out;
+    -o-transition:  all .5s ease-in-out;
+    -ms-transition:  all .5s ease-in-out;
+    transition: all .5s ease-in-out;/* ;l'animation commence et se termine longtement */
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform:scale(1);
+}
+
+
+section.section .bloc .image figure img:hover,
+section.section .bloc .image figure img:focus{
+    transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+figcaption{
+    text-align: center;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    color: aliceblue;
+    /*  la légende elle posissionnée relativement a img et remonté du bas de 20px;  */
+    position: relative;
+    bottom: 20px;
+}
+
+.bloc{
+    margin-left: 20%;
+}
+
+footer{
+    background: yellowgreen;
+    height: 80px;
+}
+
+.clear{
+    clear: both;
+}
+
