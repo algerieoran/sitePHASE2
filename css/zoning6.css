@@ -226,6 +226,7 @@ footer .container{
     height: auto;
     margin: 0 auto;
     background: rgba(127,133 , 124, 0.1);
+    padding: 20px;
 }
 .formulaire{
     width: 500px;

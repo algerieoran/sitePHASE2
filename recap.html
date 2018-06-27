@@ -37,8 +37,12 @@
             <h3>Propriétés CSS utilisées dans cette page</h3>
             <h4>Décrivez leur usage et leurs valeurs possibles</h4>
 
-                    <li>background: <br>
-                        Elle vous permettra de regrouper les propriétés de background, à savoir color, image, repeat, position, attachement. Exemple : #element { background: #f30 url(monimage.png) no-repeat top center; } Ici, mon élément aura un fond rouge assortie d'une image placée en haut au centre, non répétée. L'ordre des valeurs n'influent pas sur le résultats et vous n'êtees pas obligé de mettre une valeur pour chaque propriété regroupée dans cette super-propriété. <br>
+                    <ul>background:
+                        <li>
+                        Elle vous permettra de regrouper les propriétés de background, à savoir color, image, repeat, position, attachement. Exemple : #element { background: #f30 url(monimage.png) no-repeat top center; } Ici, mon élément aura un fond rouge assortie d'une image placée en haut au centre, non répétée. L'ordre des valeurs n'influent pas sur le résultats et vous n'êtees pas obligé de mettre une valeur pour chaque propriété regroupée dans cette super-propriété.
+                        </li>
+                    </ul>
+                    
                         
                         <ul>Background-color :
                             <li>
@@ -66,50 +70,52 @@
                                 Définit si une image de fond est fixe ou défile avec le reste de la page. 2 valeurs : fixed ou scroll. 
                             </li>
                         </ul>
-                    </li>
+                    
 
-                    <li>color: "couleur de la police".
-                        <ul>
+                    <ul>color: "couleur de la police".
+                        <li>
+                            
                             <li>Cette propriété définit la couleur du texte.</li>
                             <li>Pour indiquer celle-ci, 3 méthodes aux choix :
                                 <ul>
-                                    <li>  le nom complet, en anglais, mais n'est possible que pour les couleurs de bases (black, blue, red, pink, white, ...)
+                                    <li> 
+                                         le nom complet, en anglais, mais n'est possible que pour les couleurs de bases (black, blue, red, pink, white, ...)
                                     </li>
                                     <li>le code hexadécimal du type #91c225 (permet toutes les couleurs)</li>
-                                    <li>le code RGB rgb(145,194,37).</li>
+                                    <li>le code RGB rgb(145,194,37).
+
+                                    </li>
                                 </ul>
                             </li>
-                        </ul>
-                    </li>
+                        </li>
+                    </ul>
 
-                    <li>float: "effet flottant".
-                        <ul>
-                            <li>Défini le positionnement d'un élément dans le conteneur. La valeur left placera l'élément à gauche dans le conteneur, la valeur right à droite, la valeur none annule ce positionnement.</li>
-                        </ul>
-                    </li>
-
-                    <li>font-family: police.
-                        <ul>
+                    <ul>float: "effet flottant".
+                        
+                        <li>
+                            Défini le positionnement d'un élément dans le conteneur. La valeur left placera l'élément à gauche dans le conteneur, la valeur right à droite, la valeur none annule ce positionnement.
+                        </li>
+                    </ul>
+                        <ul>font-family: police.
                             <li>Elle définit la police de caractère utilisée</li>
                             <li>Lors du chargement de la page, le navigateur cherche sur votre ordinateur la police déclarée.</li>
                             <li>
                                 Cette propriété possède un ordre de déclaration. Par exemple pour "font-family: Verdana, Geneva, sans-serif" le navigateur cherchera la police Verdana, s'il ne la trouve pas, il affichera le paramètre 2, soit la police Geneva, ainsi de suite.
                             </li>
-                            <li>ex : police1, police2, police3, serif, sans-serif, monospace</li>
-                        </ul>
-                    </li>
+                            <li>
+                                ex : police1, police2, police3, serif, sans-serif, monospace
+                            </li>
+                    </ul>
 
-                    <li>font-size: taille de la police ; ex : 1.3em, 16px, 120%...
                         <ul>
+                                font-size: taille de la police ; ex : 1.3em, 16px, 120%...
                             <li>
                                 Elle définit la taille de la police de caractère. Elle prend comme paramètre un nombre et une unité qui représenteront une taille.
                             </li>
-                            <li> Elle s'exprime en %, em (taille relative, 1.0 étant le normal), un nom (medium, large, ...) ou en pixels (la plus utilisée).</li>
+                            <li> Elle s'exprime en %, em (taille relative, 1.0 étant le normal), un nom (medium, large, ...) ou en pixels (la plus utilisée).
+                            </li>
                         </ul>
-                    </li>
-
-                    <li>height: hauteur de l'élément.
-                        <ul>
+                        <ul>height: hauteur de l'élément.
                             <li>Cette propriété est utilisée pour attribuer une valeur de hauteur à un élément.</li>
                             <li>
                                 Elle permet de déterminer une dimensions fixe, elle est aussi utilisée pour appliquer des limites de dimensions.
@@ -119,48 +125,38 @@
                             </li>
                         </ul>
                     </li>
-
-                    <li>left: position à partir de la gauche de la fenêtre
-                        <ul>
-                            <li>Propriété permettant de positionner le contenu à gauche</li>
-                            <li>Sa valeur s'exprime en px</li>
-                        </ul>
-                    </li>
-
-                    <li>line-height: hauteur de l'interligne
-                        <ul>
-                            <li>
+                    <ul>left: position à partir de la gauche de la fenêtre
+                        <li>Propriété permettant de positionner le contenu à gauche</li>
+                        <li>Sa valeur s'exprime en px</li>
+                    </ul>
+                    <ul>line-height: hauteur de l'interligne
+                        <li>
                                 Elle définit la hauteur occupée par une ligne dans votre texte. Sa valeur s'exprime généralement en px et permet, notamment, de centrer un texte dans un bouton à hauteur fixe (en affectant une valeur line-height identique à la hauteur du bouton).
-                             </li>
-                            <li>sa valeur s'exprime le plus souvant en px ou en %</li>
-                        </ul>
-                    </li>
-
-                    <li>margin: marges extérieures
-                        <ul>
-                            <li>
-                                Cette super-propriété applique des marges extérieures à l'élément concerné, c'est à dire un décalage de sa position par rapport au conteneur selon des valeurs déterminées.
-                            </li>
-                            <li>
-                                Elle remplace les 4 propriétés margin, à savoir margin-top, margin-right, margin-bottom et margin-left. On peut définir une valeur pour chaque coté en respectant l'ordre de lecture du navigateur (haut, droite, bas, gauche).
-                            </li>
-                            <li>
-                                Une seule valeur saisie applique une marge identique à celle-ci sur chaque coté. Deux valeurs saisie applique une marge bas et haut identique à la première valeur et gauche et droite à la seconde.
-                            </li>
-                            <li>
-                                Ne saisissez pas 3 valeurs, le résultat sera aléatoire, saisissez les 4 en remplaçant la valeur du coté sans marge par un 0. Les valeurs de marges sont exprimées en px ou em. Exemple : .element { margin: 10px 50px 5px 80px; } Mon élément décalé des éléments qui l'entourent de 10px en haut, 50px à droite, 5px en bas et 80px à gauche.
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>padding: marges intérieures
-                        <ul>
+                        </li>
+                        <li>sa valeur s'exprime le plus souvant en px ou en %</li>
+                    </ul>
+                    <ul>margin: marges extérieures
+                        <li>
+                            Cette super-propriété applique des marges extérieures à l'élément concerné, c'est à dire un décalage de sa position par rapport au conteneur selon des valeurs déterminées.
+                        </li>
+                        <li>
+                            Elle remplace les 4 propriétés margin, à savoir margin-top, margin-right, margin-bottom et margin-left. On peut définir une valeur pour chaque coté en respectant l'ordre de lecture du navigateur (haut, droite, bas, gauche).
+                        </li>
+                        <li>
+                            Une seule valeur saisie applique une marge identique à celle-ci sur chaque coté. Deux valeurs saisie applique une marge bas et haut identique à la première valeur et gauche et droite à la seconde.
+                        </li>
+                        <li>
+                            Ne saisissez pas 3 valeurs, le résultat sera aléatoire, saisissez les 4 en remplaçant la valeur du coté sans marge par un 0. Les valeurs de marges sont exprimées en px ou em. Exemple : .element { margin: 10px 50px 5px 80px; } Mon élément décalé des éléments qui l'entourent de 10px en haut, 50px à droite, 5px en bas et 80px à gauche.
+                        </li>
+                    </ul>
+                    <ul>padding: marges intérieures
                             Cette super-propriété est identique à la précédente, margin, mais cette fois les marges sont appliquées à l'intérieur de l'élément concerné. <br>
                             Ce style est très souvent utilisé pour permettre un décalage du contenu (texte, tableau, ...) avec les bords de l'élément concerné. 
-                        </ul>
-                                <p> Exemple : .blocdetexte { padding : 20px; } <br>
-                                    Ici, le contenu de cette élément sera décalé de 20px de ses 4 bords. La super-propriété border vous permettra de déterminer le style appliqué aux bordure d'un élément. Plusieurs paramètres sont applicables : 
-                                </p>
+                    </ul>
+                        <p>
+                             Exemple : .blocdetexte { padding : 20px; } <br>
+                            Ici, le contenu de cette élément sera décalé de 20px de ses 4 bords. La super-propriété border vous permettra de déterminer le style appliqué aux bordure d'un élément. Plusieurs paramètres sont applicables : 
+                        </p>
                         <ol>
                             <li>
                                 l'épaisseur de la bordure, exprimée en px
@@ -168,15 +164,16 @@
                              <li>la couleur de celle-ci, exprimé en hexadécimal, RGB ou texte</li>
                              <li>le style de bordure (hidden, dashed, solid, double, dotted, inset, outset)</li>
                         </ol>
-                            <p>Exemple : .bordure { border: solid 2px red; } <br>
+                        <p>
+                            Exemple : .bordure { border: solid 2px red; } <br>
 
-                                Il existe bien d'autres propriétés CSS mais le but de ce dossier est de vous initier à ce language, j'ai donc fait le choix de ne vous parler que des plus utilisées et surtout indispensables. Cela vous donne déjà un aperçu des nombreuses possibilitées offertes par l'utilisation de feuilles de style en cascade. 
-                            </p>
-                    </li>
+                            Il existe bien d'autres propriétés CSS mais le but de ce dossier est de vous initier à ce language, j'ai donc fait le choix de ne vous parler que des plus utilisées et surtout indispensables. Cela vous donne déjà un aperçu des nombreuses possibilitées offertes par l'utilisation de feuilles de style en cascade. 
+                        </p>
+                        <ul>position: "position de l'élément dans la page".
+                            <li>
+                                Propriété qui spécifie le type de procédé utilisé pour le positionnement d'un élément.
 
-                    <li>position: "position de l'élément dans la page".
-                        <ul>
-                            <li>Propriété qui spécifie le type de procédé utilisé pour le positionnement d'un élément.</li>
+                            </li>
                             <li> 4 valeur lui sont attribuables :
                                 <ul>
                                     <li>Static (par defaut).</li>
@@ -186,32 +183,36 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li>text-align: alignement du texte <br>
-                        <lu>
+                        <ul>text-align: alignement du texte
                             <li>
                                 Elle définit l'alignement du texte dans son conteneur. Elle peut avoir comme paramètre left (par defaut), right, center ou justify (prend toute la largeur du conteneur).
                             </li>
-                        </lu>
-                    </li>
-                    <li>text-decoration:
-                        <ul>
-                            <li> changement des valeurs héritées (ici le souligné qui est standard pour les liens sous tous les navigateurs est supprimé)
-                                
+                        </ul>
+                        <ul>text-decoration:
+                            <li> 
+                                changement des valeurs héritées (ici le souligné qui est standard pour les liens sous tous les navigateurs est supprimé)
                             </li>
-                            <li>Habille le texte d'une ligne placée, selon la valeur attribuée, en dessous (souligné), au dessus ou en travers (rayé). 
-
+                            <li>
+                                Habille le texte d'une ligne placée, selon la valeur attribuée, en dessous (souligné), au dessus ou en travers (rayé).
                             </li>
                         </ul>
-                    </li>
-                    <li>top: position à partir du haut de la fenêtre</li>
-                    <li>transition: temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
-                    <li>width: largeur de l'élément par rapport à la taille de la fenêtre si on indique une valeur relative (%, em, ...)</li>
-                    <li>font style:
-                        <ul>
-                            <li>Elle détermine l'orientation de la police. 3 valeurs aux choix : italic, oblique, normal (par défaut).</li>
-                        </ul>
-                    </li>
+                   
+                    <ul>
+                        top: position à partir du haut de la fenêtre
+                    </ul>
+                    <ul>
+                        <li>transition: temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            width: largeur de l'élément par rapport à la taille de la fenêtre si on indique une valeur relative (%, em, ...)
+                        </li>
+                    </ul>
+                    <ul>font style:
+                        <li>
+                            Elle détermine l'orientation de la police. 3 valeurs aux choix : italic, oblique, normal (par défaut)
+                        </li>
+                    </ul>
                 
         </section>
 
